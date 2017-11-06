@@ -6,9 +6,8 @@ import recipes from './Data/recipes.js';
 import Menu from './Components/Menu'
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(
-    <Menu title="Delicious Recipes" recipes={recipes} />,
-    document.getElementById('root')
-);
+let destination = document.getElementById('root');
+
+ReactDOM.render(<Menu title="Delicious Recipes" recipes={recipes} />, destination);
 
 registerServiceWorker();
