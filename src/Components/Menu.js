@@ -7,7 +7,7 @@ const Menu = ({ title, recipes }) =>
         <header>
             <h1>{title}</h1>
         </header>
-        <div className="recipes">
+        <div>
             {recipes.map((recipe, i) => <Recipe key={i} {...recipe} />)}
         </div>
     </article>;
