@@ -8,6 +8,6 @@ import registerServiceWorker from './registerServiceWorker';
 
 let destination = document.getElementById('root');
 
-ReactDOM.render(<Menu title="Delicious Recipes" recipes={recipes} />, destination);
+ReactDOM.render(<Menu title="Recipes" recipes={recipes} />, destination);
 
 registerServiceWorker();
